@@ -1,6 +1,6 @@
 const Articles = () => {
   return (
-    <div>
+    <div className="p-4 text-2xl">
       <h1>
         Less Input, Improved Work Productivity For Tech Companies    </h1> 
         
