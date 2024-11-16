@@ -6,8 +6,6 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-       
-      
         <Route path="/" element={<HomePage />} />
         <Route path="/Articles/:id" element={<Articles />} />
       </Routes>
