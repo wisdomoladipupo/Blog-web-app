@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
-import myProfileImage from "../images/my profile image.jpg";
 import FaithImage from "../images/faith-image.jpeg";
 import TechvsHuman from "../images/human vs Tech image.jpeg";
 import KennethEHagin from "../images/KennethEHagin.jpeg"
@@ -12,8 +11,8 @@ const HomePage = () => {
     {
       id: uuidv4(),
       Author: "IRONHACK",
-      Title: ` Adapting to the AI move & potential jobs displacement , AI in
-                Humans Out.`,
+      Title: `is The new AI wave displacing Humans From The workplace?
+       and how to Adapt to an everchanging Tech Enviroment.`,
       Banner: TechvsHuman,
       image: IRONHACK,
       snippet: ` Less Input, Improved Work Productivity For Tech Companies `,
@@ -43,10 +42,10 @@ const HomePage = () => {
             <div key={article.id}>
               <div>
                 <div className="flex items-center  justify-between">
-                  <Link to={`Articles/${article.id}`}>
+                  <Link to={`articles/${article.id}`}>
                     <h2 className="text-lg font-bold my-6">
                       {" "}
-                      Title: {article.Title}
+                     {article.Title}
                     </h2>
                     <img className="rounded-lg" src={article.Banner} alt="article banner" />
                   </Link>
